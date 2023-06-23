@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f9003c;
+    height: 50px;
+}
+
+.conteudo-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.banner {
+    background-image: url(img/imagem-fundo-banner.jpg);
+    height: 768px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo-banner {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.texto-banner {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+}
+
+.titulo-senai {
+    color: #f9003c;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.linha-amarela {
+    border: solid 1px #F3A401;
+}
+
+.mouse {
+    width: 80px;
+}
+
+.sobre-projetos {
+    background-color: #080224;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sobre-projetos h2 {
+    color: #f9003c;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.texto-participantes {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.texto-sobre p {
+    color: white;
+    text-align: justify;
+}
+
+.conteudo-sobre h3 {
+    color: #F3A401;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.conteudo-sobre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-sobre {
+    width: 50%;
+}
+
+.imagem-sobre {
+    width: 40%;
+}
+
+.info{
+    background-image: url(img/imagem-fundo-ranking.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo-info{
+   display: flex;
+justify-content: space-between;
+}
+
+.card-info{
+     font-family:'Courier New', Courier, monospace;
+}
+
+.card-info h3{
+     color: white;
+     font-size: 20px;
+}
+
+.card-info p{
+    color: #A256F7;
+    font-size: 22px;
+    font-weight: 600;
+    border: solid 2px #A256F7;
+    width: 250px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.endereco{
+    padding: 40px 0;
+    background-image: url(img/imagem-fundo-ranking.jpg);
+}
+
+.conteudo-endereco {
+    margin: 0 auto;
+    width: 850px;
+    position: relative;
+
+}
+
+.conteudo-endereco h2{
+       color: #F3A401;
+       font-size: 50px;
+       font-weight: 600;
+}
+
+.texto-endereco{
+    color: #A256F7;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #010010;
+    border: solid 1px #A256F7;
+    padding: 55px;
+}
+
+.texto-endereco p {
+    width: 400px;
+    font-size: 20px;
+}
+
+.mapa {
+    width: 250px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+footer{
+    height: 80px;
+    background-color: #f9003c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media(max-width: 760px) {
+    .container-grid{
+        width: 75%;
+    }
+
+    .conteudo-header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .conteudo-header a {
+        padding-left: 15px;
+    }
+
+    .texto-banner h1 {
+        text-align: center;
+    }
+
+    .imagem-sobre{
+        width: 100%;
+    }
+
+    .conteudo-sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-sobre {
+        width: 100%;
+        height: unset;
+        text-align: center;
+    }
+
+    .texto-endereco{
+        width: 90%;
+    }
+
+    .texto-endereco p{
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .conteudo-endereco{
+        width: 100%;
+    }
+
+    .conteudo-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapa{
+        display: none;
+    }
+}
